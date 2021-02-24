@@ -1,0 +1,2 @@
+class MessageHandler{constructor(){this.messageEl=document.querySelector(".message"),this.setupListener()}setupListener(){document.addEventListener("message",this.handleMessage),document.addEventListener("clear-message",this.clearMessage)}clearMessage=()=>{this.messageEl.innerText=""};handleMessage=e=>{const{message:s}=e.detail;this.messageEl.innerText=s}}
+//# sourceMappingURL=message-handler.js.map
